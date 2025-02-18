@@ -32,7 +32,11 @@ body{
     width: 300px;
     margin: 10px;
     height: 30px;
-    border-radius: 9px;
+    border-radius: 0px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border: none;
+    outline: none;
+    padding: 8px;
 }
 .weight{
     display: flex;
@@ -49,7 +53,11 @@ body{
     width: 300px;
     margin: 10px;
     height: 30px;
-    border-radius: 9px;
+    border-radius: 0px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border: none;
+    outline: none;
+    padding: 8px;
 }
 
 .bmiCard{
@@ -64,4 +72,19 @@ body{
     margin: 13px;
     padding: 13px;
     border-radius: 0px 50px;
+}
+
+.calcBtn{
+    width: 150px;
+    height: 40px;
+    border-radius: 0px 20px;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease-out;
+    background-color: aqua;
+    cursor: pointer;
+}
+.calcBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    transform: scale(1.05);
 }
