@@ -22,12 +22,34 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* flex-direction: column; */
+    flex-direction: column;
 }
 
 .height input{
-    width: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
     margin: 10px;
+    height: 30px;
+    border-radius: 9px;
+}
+.weight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.weight input{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    height: 30px;
+    border-radius: 9px;
 }
 
 .bmiCard{
@@ -37,7 +59,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
+    width: 500px;
     gap: 12px;
     margin: 13px;
     padding: 13px;
