@@ -3,9 +3,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", serif;
 }
 body{
+    font-family: "Poppins", serif;
 }
 
 .bmiContainer{
@@ -15,4 +15,31 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.height{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.height input{
+    width: 40px;
+    margin: 10px;
+}
+
+.bmiCard{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    gap: 12px;
+    margin: 13px;
+    padding: 13px;
+    border-radius: 0px 50px;
 }
