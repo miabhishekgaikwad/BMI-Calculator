@@ -1,7 +1,11 @@
+
 let feet = document.getElementById("feet")
 let inch = document.getElementById("inch")
 let weight = document.getElementById("weight")
 
-let metre = feet * 0.3048;
-let metreToInch = inch * 0.0254;
-console.log(metre)
+
+let calcBtn = document.querySelector(".calcBtn")
+
+calcBtn.addEventListener("click", ()=>{
+  console.log(feet.value)
+})

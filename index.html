@@ -15,16 +15,17 @@
                 <h2>BMI Calculator</h2>
             </div>
             <div class="height">
-                <label for="feet">Height (Feet/Foot):</label>
-                <input type="number" name="feet" id="feet" placeholder="Enter Your Height in Foot/Feet" required />
-                <label for="inch">inch:</label>
-                <input type="number" name="inch" id="inch" placeholder="Enter Your Height in inches" />
+                <label for="feet">Height(Feet/Foot)</label>
+                <input class="feet" type="text" name="feet" id="feet" placeholder="Enter Your Height in Foot/Feet"
+                    />
+                <label for="inch">inch</label>
+                <input class="inch" type="text" name="inch" id="inch" placeholder="Enter Your Height in inches" />
             </div>
             <div class="weight">
-                <label for="inch">Weight (kg):</label>
-                <input type="number" name="weight" id="weight" placeholder="Enter Your Weight in kg"  />
+                <label for="weight">Weight (kg)</label>
+                <input type="text" name="weight" id="weight" placeholder="Enter Your Weight in kg" />
             </div>
-            <button class="calcBtn" type="button">Calculate</button>
+            <button id="calcBtn" class="calcBtn">Calculate</button>
             <div class="result">Normal</div>
             <div class="range"></div>
         </div>
