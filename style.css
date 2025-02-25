@@ -22,14 +22,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .height input{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 300px;
+    width: 70px;
     margin: 10px;
     height: 30px;
     border-radius: 0px 20px;
@@ -43,14 +42,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .weight input{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 300px;
+    width: 260px;
     margin: 10px;
     height: 30px;
     border-radius: 0px 20px;
