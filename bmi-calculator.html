@@ -15,20 +15,55 @@
                 <h2>BMI Calculator</h2>
             </div>
             <div class="height">
-                <label for="feet">Height(Feet/Foot)</label>
-                <input class="feet" type="text" name="feet" id="feet" placeholder="Foot/Feet"
-                    />
-                <label for="inch">inch</label>
+                <label for="feet">Height (Feet):</label>
+                <input class="feet" type="text" name="feet" id="feet" placeholder="Feet" />
+                <label for="inch">inch:</label>
                 <input class="inch" type="text" name="inch" id="inch" placeholder="inch" />
             </div>
             <div class="weight">
-                <label for="weight">Weight (kg)</label>
+                <label for="weight">Weight (kg):</label>
                 <input type="text" name="weight" id="weight" placeholder="Enter Your Weight in kg" />
             </div>
             <button id="calcBtn" class="calcBtn">Calculate</button>
             <div class="bmiValue" id="bmiValue"></div>
-            <div class="result">Normal</div>
+            <div class="result"></div>
             <div class="range"></div>
+
+        </div>
+    </div>
+    <div class="bmiInfo">
+        <div class="infoTable">
+            <table class="bmi-table" border="1" cellspacing="0" cellpadding="10">
+                <tr>
+                    <th>BMI Range</th>
+                    <th>Category</th>
+                    <th>Explanation</th>
+                </tr>
+                <tr>
+                    <td>&lt; 18.5</td>
+                    <td>Underweight</td>
+                    <td>Your weight is below the healthy range. Consider increasing calorie intake and
+                        muscle-building exercises.</td>
+                </tr>
+                <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Normal Weight</td>
+                    <td>Your weight is in a healthy range. Maintain a balanced diet and regular physical activity.
+                    </td>
+                </tr>
+                <tr>
+                    <td>25 - 29.9</td>
+                    <td>Overweight</td>
+                    <td>Your weight is above the healthy range, which may lead to health risks. Focus on a healthier
+                        diet and exercise.</td>
+                </tr>
+                <tr>
+                    <td>30+</td>
+                    <td>Obese</td>
+                    <td>Your weight is significantly above the healthy range, increasing risks of diabetes,
+                        hypertension, and other diseases. Weight management is crucial.</td>
+                </tr>
+            </table>
         </div>
     </div>
     <script src="script.js"></script>
