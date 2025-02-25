@@ -21,45 +21,48 @@ calcBtn.addEventListener("click", () => {
 
   // bmi result color me dikhane ka logic
 
-  if (bmi < 18.5) {
-    document.querySelector(".bmiValue").style.backgroundColor = "#3498db";  // Blue
-    document.querySelector(".bmiValue").style.color = "#ffffff";  // White text
-
+  if (isNaN(bmi)) {
+    document.querySelector(".bmiValue").innerText = "Please Enter Valid Input";
+  } else if (bmi < 18.5) {
+    document.querySelector(".bmiValue").style.backgroundColor = "#3498db"; // Blue
+    document.querySelector(".bmiValue").style.color = "#ffffff"; // White text
     document.querySelector(".result").style.backgroundColor = "#3498db";
-    document.querySelector(".result").style.color = "#ffffff";  // White text
+    document.querySelector(".result").style.color = "#ffffff"; // White text
 
     document.querySelector(".result").innerHTML = "Underweight";
-} else if (bmi >= 18.5 && bmi < 25) {
-    document.querySelector(".bmiValue").style.backgroundColor = "green";  // Green
-    document.querySelector(".bmiValue").style.color = "#ffffff";  // White text
+    document.getElementById("bmiValue").innerHTML = `BMI = ${Math.floor(bmi)}`;
+  } else if (bmi >= 18.5 && bmi < 25) {
+    document.querySelector(".bmiValue").style.backgroundColor = "green"; // Green
+    document.querySelector(".bmiValue").style.color = "#ffffff"; // White text
 
     document.querySelector(".result").style.backgroundColor = "green";
-    document.querySelector(".result").style.color = "#ffffff";  // White text
+    document.querySelector(".result").style.color = "#ffffff"; // White text
 
     document.querySelector(".result").innerHTML = "Normal weight";
-} else if (bmi >= 25 && bmi < 30) {
-    document.querySelector(".bmiValue").style.backgroundColor = "#f1c40f";  // Yellow
-    document.querySelector(".bmiValue").style.color = "#000000";  // Black text
+    document.getElementById("bmiValue").innerHTML = `BMI = ${Math.floor(bmi)}`;
+  } else if (bmi >= 25 && bmi < 30) {
+    document.querySelector(".bmiValue").style.backgroundColor = "#f1c40f"; // Yellow
+    document.querySelector(".bmiValue").style.color = "#000000"; // Black text
 
     document.querySelector(".result").style.backgroundColor = "#f1c40f";
-    document.querySelector(".result").style.color = "#000000";  // Black text
+    document.querySelector(".result").style.color = "#000000"; // Black text
 
     document.querySelector(".result").innerHTML = "Overweight";
-} else if (bmi >= 30) {
-    document.querySelector(".bmiValue").style.backgroundColor = "#e74c3c";  // Red
-    document.querySelector(".bmiValue").style.color = "#ffffff";  // White text
+    document.getElementById("bmiValue").innerHTML = `BMI = ${Math.floor(bmi)}`;
+  } else if (bmi >= 30) {
+    document.querySelector(".bmiValue").style.backgroundColor = "#e74c3c"; // Red
+    document.querySelector(".bmiValue").style.color = "#ffffff"; // White text
 
     document.querySelector(".result").style.backgroundColor = "#e74c3c";
-    document.querySelector(".result").style.color = "#ffffff";  // White text
+    document.querySelector(".result").style.color = "#ffffff"; // White text
 
     document.querySelector(".result").innerHTML = "Obese";
-}
+    document.getElementById("bmiValue").innerHTML = `BMI = ${Math.floor(bmi)}`;
+  }
 
+  console.log(bmi);
 
+  // bmi ko page par show karna
 
-
-
-    // bmi ko page par show karna
-
-  document.getElementById("bmiValue").innerHTML = `BMI = ${Math.floor(bmi)}`;
+  
 });
